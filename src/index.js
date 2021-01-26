@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   const form = document.getElementById("create-task-form");
-  form.addEventListener("submit", done);
+  form.addEventListener("submit", AddTask);
 });
-const done = event => {
+const AddTask = event => {
   event.preventDefault();
   const task = document.getElementById("new-task-description");
   const newTask = document.createElement("li");
