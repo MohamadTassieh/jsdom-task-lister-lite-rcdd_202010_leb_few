@@ -8,6 +8,6 @@ const toDo = event => {
   const task = document.getElementById("new-task-description");
   const newTask = document.createElement("li");
   newTask.innerText = task.value;
-
+  task.value = " ";
   document.getElementById("tasks").appendChild(newTask);
 }
